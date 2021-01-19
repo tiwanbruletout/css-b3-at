@@ -1,0 +1,27 @@
+@media( min-width: 1400px) {
+
+  p{ background-color: Red;
+  }
+
+}
+
+@media (min-width: 1001px) and ( max-width: 1399px) {
+
+  p{ background-color: blue;
+  }
+
+}
+
+@media (min-width: 800px) and ( max-width: 1000px) {
+
+  p{ background-color: green;
+  }
+
+}
+
+@media( max-width: 799px) {
+
+  p{ background-color: grey;
+  }
+
+}
