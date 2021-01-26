@@ -2,10 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/evolution.css">
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="index.css">
     <title>Evolutions et Propriétés</title>
   </head>
   <body>
-    <p> pouodjf</p>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html"> Page d'accueil </a> </li>
+          <li><a href="pages/evolution.html"> Evolution </a> </li>
+          <li><a href="pages/mentions.html"> Mentions </a> </li>
+          <li><a href="pages/perso.html"> Perso </a> </li>
+          <li><a href="pages/profil.html"> Profil </a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Les dernieres évolutions et propriétés marquantes en CSS. </h1>
+
+    <h2>Les variables CSS (custom properties) </h2>
+
+    <p>L'utilisation de variables est la base immuable de tout langage de programmation. CSS s'en dote enfin et va permettre d'offrir un confort de gestion non négligeable, notamment pour les projets contenant des centaines voire milliers de lignes en CSS.
+        L'intérêt des variables CSS est d'enregistrer une valeur quelconque au sein d'un élément réutilisable partout dans le code (la fameuse variable), sans avoir à répéter sa valeur. Prenons un exemple simple : votre site web possède deux couleurs principales, une pour les fonds et une pour les textes. Ces couleurs devant être utilisées un peu partout dans le code, il sera plus simple de les enregistrer dans des variables puis d'appeler ces variables partout où les couleurs sont à insérer. Ainsi, si vous voulez tester d'autres couleurs, vous n'aurez plus qu'une ligne à changer...
+        Les variables CSS fonctionnent sur le principe des propriétés personnalisées (custom properties) et doivent être précédées de deux tirets lors de leur déclaration. Comme ce sont en réalité des propriétés personnalisées, il faut les déclarer dans un bloc d'instruction. Pour cela, on utilise le bloc d'instruction de premier niveau, appelé :root { ... }. Enfin, on appelle et utilise les variables avec la méthode var() au sein des propriétés qui en ont besoin. </p>
+
+    <h2>Les features queries (@supports)</h2>
+
+    <p> En programmation classique, il faut des variables et des structures conditionnelles pour commencer à s'amuser un peu, et CSS l'a bien compris. C'est pour cette raison que les features queries (règle @supports { ... }) entrent en jeu. Il ne s'agit pas à proprement parler de if/else comme dans la programmation habituelle, mais le résultat en est presque identique malgré tout. En effet, @supports permet de détecter si une propriété ou une fonctionnalité existe et fonctionne dans le         navigateur en cours d'utilisation. Ainsi, nous pouvons prévoir des comportements différents selon les cas, voire offrir des variantes d'intégration selon la compatibilité avec les propriétés. Si nous prenons l'exemple du display:flex; (flexbox), on pourrait s'assurer d'une mise en forme différente en cas d'incompatibilité, avec un display:inline-block; à la place ou une autre méthode.</p>
+
+    <h2>Les grilles (CSS Grid)</h2>
+
+    <p>Les positionnements flexibles avec Flexbox (display:flex; et display:inline-flex;) ont révolutionné le monde de la mise en forme/page tant cela était attendue depuis des années par les webdesigners. CSS ne s'arrête pas en si bon chemin et fait déjà fonctionner dans tous les navigateurs actuels (sauf IE...) les CSS Grid, à savoir les grilles CSS.
+      CSS Grid est un élément qu'il faut utiliser en complément des Flexbox, car son rôle est davantage de placer les éléments principaux que de faire les petits éléments de positionnement (là où Flexbox est idéal). Pour une structure de page web, on peut donc facilement créer la structure avec Grid CSS, et la modifier comme bon nous semble.
+
+
   </body>
 </html>
